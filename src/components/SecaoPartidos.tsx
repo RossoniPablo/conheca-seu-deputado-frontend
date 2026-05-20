@@ -25,7 +25,7 @@ export const SecaoPartido = ({ titulo, deputados, siglaPartido, limit }: SecaoPa
 
       <div className="grid grid-cols-4 gap-4">
         {deputados.slice(0, limit ?? 8).map((dep, index) => (
-          <DeputadoCard key={dep.id} deputado={dep} index={index} />
+          <DeputadoCard key={dep.id || index} deputado={dep} index={index} />
         ))}
       </div>
     </section>
