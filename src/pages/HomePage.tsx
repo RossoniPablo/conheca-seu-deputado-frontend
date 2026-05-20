@@ -1,5 +1,5 @@
 import { useContext, useMemo, } from "react";
-import { SecaoPartido } from "../components/SecaoPartidos";
+import { SecaoPartido } from "../components/SecaoPartido";
 import { DeputadosContext } from "../contexts/DeputadosContext";
 import { ScrollTopButton } from "../components/ScrollToTopButton";
 

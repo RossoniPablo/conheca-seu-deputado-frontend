@@ -18,7 +18,6 @@ type DeputadoDespesas = {
 }
 
 export const DeputadoDespesas = ({ id }: { id: string }) => {
-  // const { id } = useParams();
   const [despesa, setDespesa] = useState<DeputadoDespesas[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -31,7 +30,6 @@ export const DeputadoDespesas = ({ id }: { id: string }) => {
 
         const res = await api.get(`/deputados/${id}/despesas`)
         setDespesa(res.data.dados ?? []);
-        // console.log(res)
       } catch (err) {
         console.log("Erro fetch:", err);
       } finally {

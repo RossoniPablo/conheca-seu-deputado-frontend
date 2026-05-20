@@ -24,7 +24,7 @@ export const PartidoPage = () => {
       <div className="grid grid-cols-4 gap-4">
         {deputadosFiltrados.map((dep) => (
 
-          <DeputadoCard key={dep.id} deputado={dep} nome={""} idDep={0} siglaPartido={""} />
+          <DeputadoCard key={dep.id} deputado={dep} />
         ))}
       </div>
     </div>
